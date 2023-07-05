@@ -17,9 +17,25 @@
     <body>
         <div id="app">
             <div class="container">
-                <div class="row">
-                    <div v-for="item in albumsList" class="col-4">
-                        <img class="poster" :src="item.poster" :alt="item.title + ' poster'">
+                <div class="row mx-4">
+                    <div v-for="item in albumsList" class="col-4 mb-5 bg-secondary rounded text-center">
+                        <img class="poster my-3" :src="item.poster" :alt="item.title + ' poster'">
+
+                        <h4>
+                            {{ item.title }}
+                        </h4>
+
+                        <h5>
+                            {{ item.author }}
+                        </h5>
+
+                        <p>
+                            {{ item.year }}
+                        </p>
+
+                        <p>
+                            {{ item.genre }}
+                        </p>
                     </div>
                 </div>
             </div>
