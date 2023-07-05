@@ -4,13 +4,16 @@ createApp({
     data() {
         return {
             apiURL: './server.php',
+            albumsList: [],
         }
     },
 
     methods: {
         getAlbum(){
-            axios.get(this.apiURL).then((response)=>    {
-                console.log(response.data);
+            axios.get(this.apiURL).then((response)=>{
+                //console.log(response.data);
+
+                this.albumsList = response.data;
             })
         },
     },
