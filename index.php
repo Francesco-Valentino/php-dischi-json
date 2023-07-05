@@ -17,8 +17,8 @@
     <body>
         <div id="app">
             <div class="container">
-                <div class="row mx-4">
-                    <div v-for="item in albumsList" class="col-4 mb-5 bg-secondary rounded text-center">
+                <div class="row mb-3 gx-5">
+                    <div v-for="item in albumsList" class="col-4 border rounded text-center">
                         <img class="poster my-3" :src="item.poster" :alt="item.title + ' poster'">
 
                         <h4>
